@@ -11,20 +11,21 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/tracly.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
       "tsconfigPaths": true
     },
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/tracly.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/tracly.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -33,12 +34,21 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.priscyd.trackly"
+      "bundleIdentifier": "com.priscyd.trackly",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/tracly.png",
         "backgroundColor": "#ffffff"
+      }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "4bef1b8d-ca20-4733-b3f7-817269abaca0"
       }
     }
   }
